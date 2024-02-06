@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+  /* a margin is the space around an element's border, while padding is the space between an element's border and the element's content*/
+    font-family: 'Poppins', sans-serif;      
+    box-sizing: border-box; /*  the total width and height of an element is calculated */
+}
+
+/*here is we use this comment to arrang the size of background*/      
+
+.container{                                         
+        width: 100%;
+        height: 150vh;
+        background-image:url('https://adventuresoflilnicki.com/wp-content/uploads/2020/03/Detwah-Lagoon-Socotra-Island-Yemen.jpg');
+        background-position: center;
+        background-size: cover;
+        padding-left: 8%; /* padding is the space between its content and its border. */
+        padding-right: 8%;
+        box-sizing: border-box;
+}
+.navbsar{
+    color: #000;
+    height: 12;
+    display: flex; /* property of flex container to use flexbox*/
+    align-items: center; /* sets the distribution of space between and around content items along  */
+}
+
+.logo{
+    width: 160px;
+    cursor: pointer; /* To show when the mouse pointer is over an element */
+    align-self:center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%); /* lets you rotate, scale, skew, or translate an element */
+}
+
+.navigation a{
+    color: #0d3bb9;
+    text-decoration: none; /*no line is drawn, and any existing decoration is removed*/
+    font-size: 1.1em;
+    font-weight: 200;
+    padding-left: 10px;/*space between the elements of bar*/
+    position: relative; /*here is we use this code to manage  the position of our section*/
+    left: -10px;
+}
+
+.menuicon{
+width: 28px;
+cursor: pointer;
+margin-left: 40px;
+float:right; /*place an element on the right side of its container, allowing text and inline elements to wrap around it*/
+position: absolute;
+top: 2.5%;
+left: 72%;
+transform: translate(-50%,-50%);
+
+}
+nav{
+flex: 1;
+text-align: right;
+}
+nav ul li{
+list-style: none; /*  sets the marker (such as a disc, character, or custom counter style */
+display: inline-block; /*The element itself is formatted as an inline element, but you can apply height and width values*/
+margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 13px;
+}
+.row{
+    color: #000;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    align-items: center;  
+}
+.col{
+    flex-basis: 50%; /* specifies the initial length of a flexible item  */
+}
+
+.cities {
+    color: black;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 20px;
+    justify-content: center; /* defines how the browser distributes space between and around content items along */
+    display: flex;
+    padding: 20px;
+}
+
+h1{
+    color: #fff;
+    font-size: 100px;
+    list-style-type: style;
+    text-align:center;
+    position: relative;
+    top: 200px;
+    
+    
+}
+p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 15px;
+    float: left;/*to manage our element in property place*/
+    position: relative;
+    top: 200px;
+    text-align: left;
+    
+}
+ 
+
+
+.card{
+     width: 310px;
+    height: 350px;
+     display: inline-block;
+     border-radius: 10px;
+     padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 15px 10px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5; /* provide a way to control animation speed when changing CSS properties */                                                               
+
+    
+}
+.card1{
+    background-image:url(https://media.alalam.ir/news/image/original//2017/08/15/alalam_636383943050151598_25f_4x3.jpg) ;
+}
+
+.card2{
+    background-image:url(https://www.yemenasda.net/file/2019/04/%D8%AA%D8%B9%D8%B2.jpg) ;
+}
+.card3{    background-image:url(https://media.istockphoto.com/photos/aden-city-picture-id840770014?k=20&m=840770014&s=612x612&w=0&h=gfutBormelwkpF4yZ-qjqsy6q6UfELqkjT8ne_25O3E=) ;
+
+}
+.card4{
+    background-image:url(https://ychef.files.bbci.co.uk/976x549/p0b8zt8y.jpg) ;
+}
+
+.card:hover{
+    transform: translateY(-10PX)
+}
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999; /* adds shadows to text */
+    position: relative;
+    font-size: 15px;
+}
+p1{
+    color: #fff;
+    font-size: 10px;
+    line-height: 15px; /*  specifies the height of a line */
+    float: left;
+    position: relative;
+    top: 20px
+}
+
+.card p{
+    text-shadow: 0 0 5px #000;
+    font-size: 8px;
+}
+.but {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 82%;
+    left: 48.5%;
+    transform: translate(-50%,-50%); /*move this element left and upwards by 50% of the computed dimension along the axis */
+    color: #000;
+    font-size: 18px;
+    padding: 12px 0;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.footer {
+    background-color: rgba(62, 150, 153, 0.87);
+    color: black;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between; 
+    position: relative;
+    top: 100px;
+}
+
+
+
+.footer-title {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+p2{
+position: relative;
+    top: 10px;
+}
+
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding:0 12px 0 0;
+}
+/* em – Relative to the font-size 
+ex –  Relative to the font’s x-height
+% – Relative to the enclosing parent element in percent
+vw – the width of the viewport (Size of the browser)
+vh – the height of the viewport (Size of the browser)
+vmin – Relative to 1% of the width or height of the viewport whichever is smaller between vw & vh
+vmax – Relative to 1% of the width or height of the viewport whichever is bigger between vw & vh */
+
